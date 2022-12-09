@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #EAEEEF;
+  overflow: hidden;
+    
+}
+#name{
+  border:none;
+  width: 6rem;
+  height: 100%;
+  text-align: center;
+  border-right: 4px solid gray;
+}
+#contentContainer{
+  bottom: 0;
+  background-color: #EAEEEF;
+    display: block;
+    height: 90vh;
+    overflow: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#form{ 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  bottom: 0;    
+}
+#contentContainer::-webkit-scrollbar{
+  width: 10px;
+}
+#contentContainer::-webkit-scrollbar-thumb{
+  background-color: #AAAAAA;
+  border-radius: 100px;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    word-break:break-all
+}
+#content::placeholder{
+  padding-left: 1rem;
+}
+
+#btn{
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+label{
+  cursor: pointer;
+}
+#inputImage{
+  position: absolute;
+  opacity: 0;
+  z-index: -100000;
+
+}
+
+
+#contentLi{
+  background-color: #DCE1E4;
+  width: 90%;
+  display: flex;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+#sendIcon{
+  font-size: 2rem;
+  margin: auto 1.5rem;
+}
+
+
+/* style content */
+ 
+  
+  
+  #infoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:42%;
+    border-right: 2px solid gray;
+    padding: .5rem;
+  }
+  #time{
+    font-size: .5rem;
+    display:block;
+    text-align: center;
+    
+  }
+  #message{
+    word-break: break-all;
+    font-size: 1.15rem;
+    width: 100%;
+    padding: 8px;
+    
+    margin: .2rem .3rem;
+  }
+  #img{
+    display: block;
+    width: 30%;
+    padding: 8px; 
+    margin: .2rem auto;
+  }
+  #infoName{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: .2rem 0;
+    color: #192a56;
+    font-weight: bolder;
+    
+  }
+  #addImg{
+    display: block;
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    #contentContainer{
+      bottom: 0;
+      background-color: #EAEEEF;
+      display: block;
+      height: 70vh;
+      overflow: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    #form{ 
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      bottom: 0;    
+    }
+  }
